@@ -10,8 +10,20 @@
 
 module.exports = (robot) ->
 
-  # robot.hear /badger/i, (res) ->
-  #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+   robot.hear /badger/i, (res) ->
+     res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+
+   robot.hear /stock/i, (res) ->
+     res.send "Your stock ? up, up, up, raising limit!!!"
+
+   robot.hear /股票/i, (res) ->
+     res.send "涨停了， 涨停了， 等着瞧吧！"
+
+   robot.hear /build/i, (res) ->
+     res.send "OK, building..."
+
+   robot.hear /音飞存储/i, (res) ->
+     res.send "好可惜，没有涨停，还亏钱了哎，周一继续努力！"
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
